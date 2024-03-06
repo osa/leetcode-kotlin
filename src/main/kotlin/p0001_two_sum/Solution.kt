@@ -41,6 +41,10 @@ package p0001_two_sum
 
 
 class Solution {
+    /*
+     * space: O(n)
+     * time: O(nlogn)
+     */
     fun twoSum(nums: IntArray, target: Int): IntArray {
         val items = mutableMapOf<Int, Int>()
         nums.forEachIndexed { i, num ->
