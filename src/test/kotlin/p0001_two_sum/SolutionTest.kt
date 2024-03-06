@@ -26,4 +26,22 @@ class SolutionTest {
         // asserts
         Assertions.assertArrayEquals(intArrayOf(), actual)
     }
+
+    @Test
+    fun `When result does not exist should return empty list`() {
+        // action
+        val actual = sut.twoSum(intArrayOf(1, 2), 1)
+
+        // asserts
+        Assertions.assertArrayEquals(intArrayOf(), actual)
+    }
+
+    @Test
+    fun `Finding two sum should return expected result`() {
+        // action
+        val actual = sut.twoSum(intArrayOf(2, 7, 11, 15), 9)
+
+        // asserts
+        Assertions.assertArrayEquals(intArrayOf(0, 1), actual)
+    }
 }
